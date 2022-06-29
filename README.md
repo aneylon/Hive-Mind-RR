@@ -12,8 +12,19 @@ A project for managing Necromunda, Kill Team and Warcry resources.
 - Set up auth
 - Finish ToDo Component
   - Save and retrieve Todos to backend
+- Add Chart Js for react
 
-# Setting up and running
+## References
+- [React](https://reactjs.org/)
+- [React Router](https://reactrouter.com)
+- [Redux](https://redux.js.org/)
+- [React Redux](https://react-redux.js.org/)
+- [Mui](https://mui.com/)
+- [React Chart Js](https://github.com/reactchartjs/react-chartjs-2)
+
+
+
+# Setting up and getting started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
