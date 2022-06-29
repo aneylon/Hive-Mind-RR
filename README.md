@@ -2,6 +2,17 @@
 
 A project for managing Necromunda, Kill Team and Warcry resources.
 
+## ToDos
+- [x] Add Router
+  - [x] Add Nav Component
+  - [x] Add Not Found Component
+- Add Redux
+  - Set up Redux Dev Tools
+- Add Mui
+- Set up auth
+- Finish ToDo Component
+  - Save and retrieve Todos to backend
+
 # Setting up and running
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
