@@ -1,7 +1,7 @@
 import React from 'react'
 import Home from './Home'
 import About from './About'
-import ToDo from './ToDo'
+import ToDo from './ToDo/ToDo'
 import NotFound from './NotFound'
 import { Game } from './TicTacToe'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'

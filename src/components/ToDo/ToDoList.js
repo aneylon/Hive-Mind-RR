@@ -1,11 +1,11 @@
 import React from 'react'
 
-const ToDo = () => {
+const ToDoList = () => {
   return (
     <div>
-      Todo: Todo list.
+      To Do List.
     </div>
   )
 }
 
-export default ToDo
+export default ToDoList
