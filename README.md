@@ -25,6 +25,8 @@ A project for managing Necromunda, Kill Team and Warcry resources.
 - [React Redux](https://react-redux.js.org/)
 - [Mui](https://mui.com/)
 - [React Chart Js](https://github.com/reactchartjs/react-chartjs-2)
+- [Redux Devtools](https://github.com/reduxjs/redux-devtools)
+- [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
 
 # Setting up and getting started
 

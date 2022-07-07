@@ -5,7 +5,7 @@ import ToDoFilters from './ToDoFilters'
 
 const ToDo = () => {
   return (
-    <div>
+    <div className="todo-app">
       <h1>Todo list</h1>
       <AddToDo />
       <ToDoList />
