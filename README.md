@@ -3,16 +3,20 @@
 A project for managing Necromunda, Kill Team and Warcry resources.
 
 ## ToDos
+- Finish ToDo Component
+  - Save and retrieve Todos to backend
+- Add Mui
+- Set up auth
+- Add Chart Js for react
+- Game Tools
+  - Enforcer name generator
+  - Dice roller
+  - Dice charts
 - [x] Add Router
   - [x] Add Nav Component
   - [x] Add Not Found Component
-- Add Redux
-  - Set up Redux Dev Tools
-- Add Mui
-- Set up auth
-- Finish ToDo Component
-  - Save and retrieve Todos to backend
-- Add Chart Js for react
+- [x] Add Redux
+  - [x] Set up Redux Dev Tools
 
 ## References
 - [React](https://reactjs.org/)
@@ -21,8 +25,6 @@ A project for managing Necromunda, Kill Team and Warcry resources.
 - [React Redux](https://react-redux.js.org/)
 - [Mui](https://mui.com/)
 - [React Chart Js](https://github.com/reactchartjs/react-chartjs-2)
-
-
 
 # Setting up and getting started
 
