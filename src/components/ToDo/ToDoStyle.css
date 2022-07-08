@@ -1,0 +1,13 @@
+.todo-app {
+	font-family: sans-serif;
+}
+
+.add-todo {
+	margin-left: 0.5rem;
+}
+
+.todo-list {
+	margin-top: 1rem;
+	text-align: left;
+	list-style: none;
+}
