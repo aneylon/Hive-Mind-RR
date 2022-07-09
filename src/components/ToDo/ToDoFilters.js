@@ -17,6 +17,7 @@ const ToDoFilters = ({activeFilter, setFilter}) => {
               currentFilter === activeFilter && 'filter--active'
             )}
             onClick={() => {
+              console.log('clicked')
               setFilter(currentFilter)
             }}
           >
