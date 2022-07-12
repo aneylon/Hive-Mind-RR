@@ -12,6 +12,9 @@ A project for managing Necromunda, Kill Team and Warcry resources.
   - Enforcer name generator
   - Dice roller
   - Dice charts
+- Testing
+  - component (Jest?)
+  - end to end (Cypress?)
 - [x] Add Mui
 - [x] Add Router
   - [x] Add Nav Component
