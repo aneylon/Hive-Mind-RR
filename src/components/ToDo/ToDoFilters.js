@@ -5,6 +5,7 @@ import { setFilter } from '../../redux/actions/actions'
 import { VISIBILITY_FILTERS } from '../../redux/constants'
 
 const ToDoFilters = ({activeFilter, setFilter}) => {
+  console.log(activeFilter)
   return (
     <div className='visibility-filters'>
       {Object.keys(VISIBILITY_FILTERS).map(filterKey => {
@@ -17,6 +18,7 @@ const ToDoFilters = ({activeFilter, setFilter}) => {
               currentFilter === activeFilter && 'filter--active'
             )}
             onClick={() => {
+              console.log('clicked', currentFilter)
               setFilter(currentFilter)
             }}
           >
@@ -29,7 +31,8 @@ const ToDoFilters = ({activeFilter, setFilter}) => {
 }
 
 const mapStateToProps = state => {
-  return { activeFilter: state.activeFilter }
+  console.log(state)
+  return { activeFilter: state.visibilityFilter }
 }
 
 export default connect(mapStateToProps, {setFilter})(ToDoFilters)
