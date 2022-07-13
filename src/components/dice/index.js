@@ -42,7 +42,7 @@ const Dice = () => {
 
 	let showResults = (resultsToShow) => {
 		if (resultsToShow.length > 0) {
-			return resultsToShow.length
+			return resultsToShow.join(', ')
 		} else {
 			return ''
 		}
@@ -53,13 +53,21 @@ const Dice = () => {
 	}
 
 	let getTotal = (rolledDice) => {
-		return 42
+		return rolledDice.reduce((prev, cur) => {
+			return prev + cur
+		}, 0)
 	}
 
 	let showDiceToRoll = () => {
 		if (diceToRoll.length <= 0) return <span>Add some dice!</span>
 		else {
-			return <span>{diceToRoll.length}</span>
+			let display = diceToRoll.reduce((prev, current, index, arr) => {
+				let result = `1d${current.dice}`
+				if (current.modifier > 0) result += `+${current.modifier}`
+				if (index < arr.length - 1) result += ` + `
+				return prev + result
+			}, '')
+			return <span>{display}</span>
 		}
 	}
 

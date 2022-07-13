@@ -10,8 +10,11 @@ A project for managing Necromunda, Kill Team and Warcry resources.
 - Add Chart Js for react
 - Game Tools
   - Enforcer name generator
-  - Dice roller
-  - Dice charts
+  - [x] Dice roller
+    - Add multiples of dice.
+    - Show results more atomically ex - 3 (2+1)
+  - Color scheme generator
+  - Dice charts (tables to roll)
 - Testing
   - component (Jest?)
   - end to end (Cypress?)
