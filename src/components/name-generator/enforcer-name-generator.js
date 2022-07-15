@@ -1,7 +1,31 @@
 import { Button, Container, TextField, Typography } from '@mui/material'
 import React, { useState, useEffect } from 'react'
+import { CasinoOutlined } from '@mui/icons-material'
+import { makeStyles } from '@mui/styles'
+
+const useStyles = makeStyles({
+	title: {
+		textDecoration: 'underline',
+		marginBottom: '1rem',
+	},
+	inputField: {
+		marginTop: '1rem',
+		marginBottom: '1rem',
+		display: 'block',
+	},
+	btn: {
+		fontSize: '1.25rem',
+		color: 'gold',
+		backgroundColor: 'grey',
+		'&:hover': {
+			color: 'goldenrod',
+			backgroundColor: 'dimgrey',
+		},
+	},
+})
 
 const EnforcerNameGenerator = () => {
+	const classes = useStyles()
 	const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 	const [numberOfNames, setNumberOfNames] = useState('')
 	const [generatedNames, setGeneratedNames] = useState([])
@@ -11,7 +35,7 @@ const EnforcerNameGenerator = () => {
 	}, [])
 
 	const generateNames = (numberToGenerate = 3) => {
-		console.log(`generating : ${numberToGenerate}`)
+		if (numberToGenerate <= 0) numberToGenerate = 1
 		let names = []
 		for (let i = 0; i < numberToGenerate; i++) {
 			names.push(makeEnforcerName())
@@ -38,24 +62,28 @@ const EnforcerNameGenerator = () => {
 
 	return (
 		<Container>
-			<Typography variant='h6' component='h2'>
+			<Typography className={classes.title} variant='h6' component='h2'>
 				Enforcer Name Generator
 			</Typography>
 			<form>
 				<TextField
+					className={classes.inputField}
 					onChange={(event) => {
 						setNumberOfNames(event.target.value)
 					}}
 					variant='standard'
-					label='Number of names'
+					label='Number to create'
 					type='number'
 				/>
 				<br />
 				<Button
+					className={classes.btn}
 					variant='contained'
 					onClick={() => {
 						generateNames(numberOfNames)
 					}}
+					startIcon={<CasinoOutlined />}
+					endIcon={<CasinoOutlined />}
 				>
 					Generate names
 				</Button>
