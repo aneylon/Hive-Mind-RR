@@ -4,7 +4,10 @@ A project for managing Necromunda, Kill Team and Warcry resources.
 
 ## ToDos
 - Finish ToDo Component
+  - Load Todos from backend
   - Save and retrieve Todos to backend
+- Fix Posts
+  - Wire up to back end
 - Add Mui
 - Set up auth
 - Add Chart Js for react
