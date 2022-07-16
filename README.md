@@ -3,18 +3,27 @@
 A project for managing Necromunda, Kill Team and Warcry resources.
 
 ## ToDos
+
 - Finish ToDo Component
   - Load Todos from backend
   - Save and retrieve Todos to backend
 - Fix Posts
   - Wire up to back end
-- Add Mui
 - Set up auth
 - Add Chart Js for react
 - Game Tools
-  - Enforcer name generator
-  - Dice roller
-  - Dice charts
+  - [x] Enforcer name generator
+    - Allow user to pick format
+  - [x] Dice roller
+    - Add multiples of dice.
+    - Show results more atomically ex - 3 (2+1)
+  - Color scheme generator
+  - Anagram-a-tron
+  - Dice charts (tables to roll)
+- Testing
+  - component (Jest?)
+  - end to end (Cypress?)
+- [x] Add Mui
 - [x] Add Router
   - [x] Add Nav Component
   - [x] Add Not Found Component
@@ -22,6 +31,7 @@ A project for managing Necromunda, Kill Team and Warcry resources.
   - [x] Set up Redux Dev Tools
 
 ## References
+
 - [React](https://reactjs.org/)
 - [React Router](https://reactrouter.com)
 - [Redux](https://redux.js.org/)
@@ -32,6 +42,20 @@ A project for managing Necromunda, Kill Team and Warcry resources.
 - [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
 
 # Setting up and getting started
+
+- Formatting with prettier
+  - Install the Prettier extension in VS Code
+  - Set Editor: Default Formatter = Prettier
+  - Set Editor: Format on Save
+- Enable emmet in react
+
+```json
+"emmet.includeLanguages": { "javascript": "javascriptreact" }
+```
+
+- Point to a running version of the api
+
+## ...things to clean up...
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
