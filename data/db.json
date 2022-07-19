@@ -1,0 +1,4 @@
+{
+	"posts": [{ "id": 1, "title": "some stuff" }],
+	"todo": [{ "id": 1, "completed": false, "content": "do a thing" }]
+}
