@@ -4,25 +4,26 @@ A project for managing Necromunda, Kill Team and Warcry resources.
 
 ## ToDos
 
-- Finish ToDo Component
-  - Load Todos from backend
-  - Save and retrieve Todos to backend
-- Fix Posts
-  - Wire up to back end
-- Set up auth
-- Add Chart Js for react
+- [ ] Bug Report Component
+- [ ] Finish ToDo Component
+  - [ ] Load Todos from backend
+  - [ ] Save and retrieve Todos to backend
+- [ ] Fix Posts
+  - [ ] Wire up to back end
+- [ ] Set up auth
+- [ ] Add Chart Js for react
 - Game Tools
   - [x] Enforcer name generator
-    - Allow user to pick format
+    - [ ] Allow user to pick format
   - [x] Dice roller
-    - Add multiples of dice.
-    - Show results more atomically ex - 3 (2+1)
-  - Color scheme generator
-  - Anagram-a-tron
-  - Dice charts (tables to roll)
-- Testing
-  - component (Jest?)
-  - end to end (Cypress?)
+    - [ ] Add multiples of dice.
+    - [ ] Show results more atomically ex - 3 (2+1)
+  - [ ] Color scheme generator
+  - [ ] Anagram-a-tron
+  - [ ] Dice charts (tables to roll)
+- [ ] Testing
+  - [ ] component (Jest?)
+  - [ ] end to end (Cypress?)
 - [x] Add Mui
 - [x] Add Router
   - [x] Add Nav Component
