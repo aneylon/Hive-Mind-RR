@@ -30,6 +30,7 @@ A project for managing Necromunda, Kill Team and Warcry resources.
   - [x] Add Not Found Component
 - [x] Add Redux
   - [x] Set up Redux Dev Tools
+- [x] Add json-server for local development
 
 ## References
 
@@ -41,6 +42,7 @@ A project for managing Necromunda, Kill Team and Warcry resources.
 - [React Chart Js](https://github.com/reactchartjs/react-chartjs-2)
 - [Redux Devtools](https://github.com/reduxjs/redux-devtools)
 - [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+- [JSON Server](https://github.com/typicode/json-server)
 
 # Setting up and getting started
 
