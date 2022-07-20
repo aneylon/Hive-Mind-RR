@@ -4,6 +4,8 @@ A project for managing Necromunda, Kill Team and Warcry resources.
 
 ## ToDos
 
+- [ ] Google Analytics
+- [ ] Use new MUI Styling
 - [ ] Bug Report Component
 - [ ] Finish ToDo Component
   - [ ] Load Todos from backend
@@ -31,6 +33,7 @@ A project for managing Necromunda, Kill Team and Warcry resources.
 - [x] Add Redux
   - [x] Set up Redux Dev Tools
 - [x] Add json-server for local development
+- [x] Environment Variables
 
 ## References
 
@@ -46,6 +49,17 @@ A project for managing Necromunda, Kill Team and Warcry resources.
 
 # Setting up and getting started
 
+- Run `yarn install` to install all dependencies
+- Add a .env file to the root of the application with the following settings
+
+```
+REACT_APP_API_URL = 'localhost:3700' // or whatever url the local api is running on
+```
+
+- Run `yarn start` to start the applications
+
+## Setting up for code editing
+
 - Formatting with prettier
   - Install the Prettier extension in VS Code
   - Set Editor: Default Formatter = Prettier
@@ -55,8 +69,6 @@ A project for managing Necromunda, Kill Team and Warcry resources.
 ```json
 "emmet.includeLanguages": { "javascript": "javascriptreact" }
 ```
-
-- Point to a running version of the api
 
 ## ...things to clean up...
 
