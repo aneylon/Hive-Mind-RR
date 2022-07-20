@@ -1,7 +1,7 @@
-import { Button, Container, TextField, Typography } from '@mui/material'
+import { Button, Container, TextField, Typography } from '@material-ui/core'
 import React, { useState, useEffect } from 'react'
-import { CasinoOutlined } from '@mui/icons-material'
-import { makeStyles } from '@mui/styles'
+import { CasinoOutlined } from '@material-ui/icons'
+import { makeStyles } from '@material-ui/styles'
 
 const useStyles = makeStyles({
 	title: {

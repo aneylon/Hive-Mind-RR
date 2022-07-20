@@ -5,7 +5,7 @@ import {
 	CardContent,
 	TextField,
 	Typography,
-} from '@mui/material'
+} from '@material-ui/core'
 import React from 'react'
 import { useState } from 'react'
 

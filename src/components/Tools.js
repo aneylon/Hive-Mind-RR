@@ -10,7 +10,7 @@ const Tools = () => {
 			<h1>Tools</h1>
 			<BugReport />
 			{/* <Anagram /> */}
-			{/* <EnforcerNameGenerator /> */}
+			<EnforcerNameGenerator />
 			{/* <Dice /> */}
 		</div>
 	)
