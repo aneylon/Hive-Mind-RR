@@ -10,9 +10,9 @@ const Tools = () => {
 		<div>
 			<h1>Tools</h1>
 			<ColorScheme />
-			<BugReport />
+			{/* <BugReport /> */}
 			{/* <Anagram /> */}
-			<EnforcerNameGenerator />
+			{/* <EnforcerNameGenerator /> */}
 			{/* <Dice /> */}
 		</div>
 	)

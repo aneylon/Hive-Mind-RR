@@ -20,7 +20,7 @@ A project for managing Necromunda, Kill Team and Warcry resources.
   - [x] Dice roller
     - [ ] Add multiples of dice.
     - [ ] Show results more atomically ex - 3 (2+1)
-  - [ ] Color scheme generator
+  - [x] Color scheme generator
   - [ ] Anagram-a-tron
   - [ ] Dice charts (tables to roll)
 - [ ] Testing
