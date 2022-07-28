@@ -1,4 +1,11 @@
-import { Button, Container, TextField, Typography } from '@material-ui/core'
+import {
+	Button,
+	Card,
+	CardActions,
+	CardContent,
+	TextField,
+	Typography,
+} from '@material-ui/core'
 import React, { useState, useEffect } from 'react'
 import { CasinoOutlined } from '@material-ui/icons'
 import { makeStyles } from '@material-ui/styles'
@@ -61,39 +68,45 @@ const EnforcerNameGenerator = () => {
 	}
 
 	return (
-		<Container>
-			<Typography className={classes.title} variant='h6' component='h2'>
-				Enforcer Name Generator
-			</Typography>
-			<form>
-				<TextField
-					className={classes.inputField}
-					onChange={(event) => {
-						setNumberOfNames(event.target.value)
-					}}
-					variant='standard'
-					label='Number to create'
-					type='number'
-				/>
-				<br />
-				<Button
-					className={classes.btn}
-					variant='contained'
-					onClick={() => {
-						generateNames(numberOfNames)
-					}}
-					startIcon={<CasinoOutlined />}
-					endIcon={<CasinoOutlined />}
-				>
-					Generate names
-				</Button>
-			</form>
-			<ul>
-				{generatedNames.map((name, index) => {
-					return <li key={index}>{name}</li>
-				})}
-			</ul>
-		</Container>
+		<Card>
+			<CardContent>
+				<Typography className={classes.title} variant='h3' component='h2'>
+					Enforcer Name Generator
+				</Typography>
+			</CardContent>
+			<CardActions>
+				<form>
+					<TextField
+						className={classes.inputField}
+						onChange={(event) => {
+							setNumberOfNames(event.target.value)
+						}}
+						variant='standard'
+						label='Number to create'
+						type='number'
+					/>
+					<br />
+					<Button
+						className={classes.btn}
+						variant='contained'
+						onClick={() => {
+							generateNames(numberOfNames)
+						}}
+						startIcon={<CasinoOutlined />}
+						endIcon={<CasinoOutlined />}
+					>
+						Generate names
+					</Button>
+				</form>
+			</CardActions>
+			<CardContent>
+				<ul>
+					{generatedNames.map((name, index) => {
+						return <li key={index}>{name}</li>
+					})}
+				</ul>
+			</CardContent>
+		</Card>
 	)
 }
 

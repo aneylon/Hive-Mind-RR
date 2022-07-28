@@ -7,7 +7,7 @@ import { Game } from './TicTacToe'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navigation from './Navigation'
 import Posts from './Posts/Posts'
-import Tools from './Tools'
+import Tools from './Tools/Tools'
 
 const App = () => {
 	return (

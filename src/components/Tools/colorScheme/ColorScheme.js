@@ -1,5 +1,11 @@
 import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/styles'
+import Card from '@material-ui/core/Card'
+import CardActions from '@material-ui/core/CardActions'
+import CardContent from '@material-ui/core/CardContent'
+import Button from '@material-ui/core/Button'
+import TextField from '@material-ui/core/TextField'
+import Typography from '@material-ui/core/Typography'
 
 const useStyles = makeStyles({
 	swatch: {
@@ -15,7 +21,6 @@ const ColorScheme = () => {
 	const [numberOfColors, setNumberOfColors] = useState('')
 
 	const generateColors = (numberToGenerate) => {
-		console.log('make them colors', numberToGenerate)
 		let colors = []
 		for (let i = 0; i < numberToGenerate; i++) {
 			colors.push(generateRandomRGBColor())
@@ -24,12 +29,10 @@ const ColorScheme = () => {
 	}
 
 	const showColors = (colorsToShow) => {
-		console.log(colorsToShow)
 		if (colorsToShow.length <= 0)
 			return <li>Pick a number of colors to generate</li>
 		else {
 			return colorsToShow.map((color, index) => {
-				console.log(color)
 				return (
 					<li
 						className={classes.swatch}
@@ -53,21 +56,32 @@ const ColorScheme = () => {
 
 	return (
 		<div>
-			<h1>Generate Colors</h1>
-			<input
-				placeholder='Number of colors to generate'
-				type='number'
-				onChange={(event) => setNumberOfColors(event.target.value)}
-				value={numberOfColors}
-			/>
-			<button
-				onClick={() => {
-					generateColors(numberOfColors)
-				}}
-			>
-				Generate Colors
-			</button>
-			<ul>{showColors(colors)}</ul>
+			<Card>
+				<CardContent>
+					<Typography variant='h3'>Generate Colors</Typography>
+					<TextField
+						variant='standard'
+						// placeholder='# of colors to generate'
+						label='Number to generate'
+						type='number'
+						onChange={(event) => setNumberOfColors(event.target.value)}
+						value={numberOfColors}
+					/>
+				</CardContent>
+				<CardActions>
+					<Button
+						variant='contained'
+						onClick={() => {
+							generateColors(numberOfColors)
+						}}
+					>
+						Generate Colors
+					</Button>
+				</CardActions>
+				<CardContent>
+					<ul>{showColors(colors)}</ul>
+				</CardContent>
+			</Card>
 		</div>
 	)
 }

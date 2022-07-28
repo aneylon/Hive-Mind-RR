@@ -75,7 +75,7 @@ const Dice = () => {
 		<div>
 			<Card>
 				<CardContent>
-					<Typography>Lets Roll!</Typography>
+					<Typography variant='h3'>Lets Roll!</Typography>
 					<TextField
 						id='add-dice-input'
 						label='Dice Value'

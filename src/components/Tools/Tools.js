@@ -1,9 +1,9 @@
 import React from 'react'
-import BugReport from './BugReport/BugReport'
-import Dice from './dice'
+import BugReport from '../BugReport/BugReport'
+import Dice from './dice/dice'
 import EnforcerNameGenerator from './name-generator/enforcer-name-generator'
-import Anagram from './Tools/Anagram/Anagram'
-import ColorScheme from './Tools/colorScheme/ColorScheme'
+import Anagram from './Anagram/Anagram'
+import ColorScheme from './colorScheme/ColorScheme'
 
 const Tools = () => {
 	return (
@@ -12,8 +12,8 @@ const Tools = () => {
 			<ColorScheme />
 			{/* <BugReport /> */}
 			{/* <Anagram /> */}
-			{/* <EnforcerNameGenerator /> */}
-			{/* <Dice /> */}
+			<EnforcerNameGenerator />
+			<Dice />
 		</div>
 	)
 }
