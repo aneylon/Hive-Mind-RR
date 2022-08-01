@@ -1,7 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import { useSignout } from '../hooks/useSignout'
 const Navigation = () => {
+	const { signout } = useSignout()
+
+	const handleSignout = () => {
+		signout()
+	}
 	return (
 		<div>
 			<nav>
@@ -30,6 +35,9 @@ const Navigation = () => {
 					</li>
 					<li>
 						<Link to='/Signin'>Signin</Link>
+					</li>
+					<li>
+						<button onClick={handleSignout}>Signout</button>
 					</li>
 				</ul>
 			</nav>
