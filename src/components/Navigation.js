@@ -25,6 +25,12 @@ const Navigation = () => {
 					<li>
 						<Link to='/Tools'>Tools</Link>
 					</li>
+					<li>
+						<Link to='/Signup'>Signup</Link>
+					</li>
+					<li>
+						<Link to='/Signin'>Signin</Link>
+					</li>
 				</ul>
 			</nav>
 		</div>
