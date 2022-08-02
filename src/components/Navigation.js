@@ -1,8 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useSignout } from '../hooks/useSignout'
+import { useAuthContext } from '../hooks/useAuthContext'
+
 const Navigation = () => {
 	const { signout } = useSignout()
+	const { user } = useAuthContext()
 
 	const handleSignout = () => {
 		signout()
@@ -30,15 +33,22 @@ const Navigation = () => {
 					<li>
 						<Link to='/Tools'>Tools</Link>
 					</li>
-					<li>
-						<Link to='/Signup'>Signup</Link>
-					</li>
-					<li>
-						<Link to='/Signin'>Signin</Link>
-					</li>
-					<li>
-						<button onClick={handleSignout}>Signout</button>
-					</li>
+					{!user && (
+						<>
+							<li>
+								<Link to='/Signup'>Signup</Link>
+							</li>
+							<li>
+								<Link to='/Signin'>Signin</Link>
+							</li>
+						</>
+					)}
+					{user && (
+						<li>
+							<span>{user.email}</span>
+							<button onClick={handleSignout}>Signout</button>
+						</li>
+					)}
 				</ul>
 			</nav>
 		</div>

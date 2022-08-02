@@ -54,7 +54,7 @@ A project for managing Necromunda, Kill Team and Warcry resources.
 - Add a .env file to the root of the application with the following settings
 
 ```
-REACT_APP_API_URL = 'localhost:3700' // or whatever url the local api is running on
+REACT_APP_API_URL = 'http://localhost:3700' // or whatever url the local api is running on
 ```
 
 - Run `yarn start` to start the applications
