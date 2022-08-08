@@ -5,7 +5,7 @@ A project for managing Necromunda, Kill Team and Warcry resources.
 ## ToDos
 
 - [ ] Deploy to heroku or netlify or something
-- [ ] CI
+- [ ] CI (Circle, Jenkins, ???)
 - [ ] Google Analytics
 - [ ] Use new MUI Styling
 - [ ] Bug Report Component
@@ -23,7 +23,7 @@ A project for managing Necromunda, Kill Team and Warcry resources.
   - [ ] Kill Team
   - [ ] Necromunda
 - [ ] Necromunda Market
-- [ ] Random
+  - [ ] Random Market generator
 - Game Tools
   - [x] Enforcer name generator
     - [ ] Allow user to pick format
