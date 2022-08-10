@@ -58,6 +58,7 @@ A project for managing Necromunda, Kill Team and Warcry resources.
 - [Redux Devtools](https://github.com/reduxjs/redux-devtools)
 - [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
 - [JSON Server](https://github.com/typicode/json-server)
+- [Date FNS](https://date-fns.org)
 
 # Setting up and getting started
 
