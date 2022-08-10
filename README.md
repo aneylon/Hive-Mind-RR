@@ -32,6 +32,7 @@ A project for managing Necromunda, Kill Team and Warcry resources.
     - [ ] Show results more atomically ex - 3 (2+1)
   - [x] Color scheme generator
   - [ ] Anagram-a-tron
+  - [ ] Random Matches
   - [ ] Dice charts (tables to roll)
 - [ ] Testing
   - [ ] component (Jest?)
