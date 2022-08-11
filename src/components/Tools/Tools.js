@@ -13,7 +13,7 @@ const Tools = () => {
 			<Matcher />
 			{/* <ColorScheme /> */}
 			{/* <BugReport /> */}
-			{/* <Anagram /> */}
+			<Anagram />
 			{/* <EnforcerNameGenerator /> */}
 			{/* <Dice /> */}
 		</div>

@@ -30,7 +30,8 @@ A project for managing Necromunda, Kill Team and Warcry resources.
   - [ ] Add multiples of dice.
   - [ ] Show results more atomically ex - 3 (2+1)
 - [x] Color scheme generator
-- [ ] Anagram-a-tron
+- [x] Anagram-a-tron
+  - [ ] Add MUI styling
 - [ ] Random Matches
 - [ ] Dice charts (tables to roll)
 - [ ] Testing

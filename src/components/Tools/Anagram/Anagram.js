@@ -1,17 +1,21 @@
 import React, { useState } from 'react'
+import { stringPermutations } from '../../../utilities/permutation/permutation'
 
 const Anagram = () => {
 	const [userWord, setUserWord] = useState('')
 	const [anagrams, setAnagrams] = useState([])
 
 	const createAnagrams = (word) => {
-		console.log('mix it up!', word)
-		// create permutations
-		let results = []
+		let results = stringPermutations(word)
 		setAnagrams(results)
 	}
-	const showAnagrams = (word) => {
-		if (word === '') return <li>Nag a ram!</li>
+	const showAnagrams = (thingsToShow) => {
+		if (thingsToShow.length < 1) return <li>Nag a ram!</li>
+		else {
+			return thingsToShow.map((anagram, index) => {
+				return <div key={index}>{anagram.split('').join(' ')}</div>
+			})
+		}
 	}
 	return (
 		<div>
@@ -29,7 +33,7 @@ const Anagram = () => {
 			>
 				Anagram-a-tron it!
 			</button>
-			<ul>{showAnagrams()}</ul>
+			<ul>{showAnagrams(anagrams)}</ul>
 		</div>
 	)
 }
