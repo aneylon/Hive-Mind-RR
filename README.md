@@ -7,7 +7,6 @@ A project for managing Necromunda, Kill Team and Warcry resources.
 - [ ] Deploy to heroku or netlify or something
 - [ ] CI (Circle, Jenkins, ???)
 - [ ] Google Analytics
-- [ ] Use new MUI Styling
 - [ ] Bug Report Component
 - [ ] Finish ToDo Component
   - [ ] Load Todos from backend
@@ -17,30 +16,32 @@ A project for managing Necromunda, Kill Team and Warcry resources.
 - [ ] Messages
 - [ ] Set up auth
 - [ ] Add Chart Js for react
-- [ ] Settlement
+- Game Tools
 - [ ] Warband manager
   - [ ] Warcry
   - [ ] Kill Team
   - [ ] Necromunda
-- [ ] Necromunda Market
-  - [ ] Random Market generator
-- Game Tools
+    - [ ] Settlement
+    - [ ] Necromunda Market
+    - [ ] Random Market generator
   - [x] Enforcer name generator
     - [ ] Allow user to pick format
-  - [x] Dice roller
-    - [ ] Add multiples of dice.
-    - [ ] Show results more atomically ex - 3 (2+1)
-  - [x] Color scheme generator
-  - [ ] Anagram-a-tron
-  - [ ] Random Matches
-  - [ ] Dice charts (tables to roll)
+- [x] Dice roller
+  - [ ] Add multiples of dice.
+  - [ ] Show results more atomically ex - 3 (2+1)
+- [x] Color scheme generator
+- [ ] Anagram-a-tron
+- [ ] Random Matches
+- [ ] Dice charts (tables to roll)
 - [ ] Testing
   - [ ] component (Jest?)
   - [ ] end to end (Cypress?)
 - [x] Add Mui
+  - [ ] Use MUI Styling
 - [x] Add Router
   - [x] Add Nav Component
   - [x] Add Not Found Component
+  - [] Protect routes
 - [x] Add Redux
   - [x] Set up Redux Dev Tools
 - [x] Add json-server for local development
