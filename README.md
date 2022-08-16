@@ -8,13 +8,14 @@ A project for managing Necromunda, Kill Team and Warcry resources.
 - [ ] CI (Circle, Jenkins, ???)
 - [ ] Google Analytics
 - [ ] Bug Report Component
+- [ ] Send signed in user or annonymous information
 - [ ] Finish ToDo Component
   - [ ] Load Todos from backend
   - [ ] Save and retrieve Todos to backend
 - [ ] Fix Posts
   - [ ] Wire up to back end
 - [ ] Messages
-- [ ] Set up auth
+- [x] Set up auth
 - [ ] Add Chart Js for react
 - Game Tools
 - [ ] Warband manager
@@ -30,6 +31,8 @@ A project for managing Necromunda, Kill Team and Warcry resources.
   - [ ] Add multiples of dice.
   - [ ] Show results more atomically ex - 3 (2+1)
 - [x] Color scheme generator
+  - [ ] Adjusted colors
+  - [ ] Save color schemes
 - [x] Anagram-a-tron
   - [ ] Add MUI styling
 - [ ] Random Matches
