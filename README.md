@@ -4,6 +4,7 @@ A project for managing Necromunda, Kill Team and Warcry resources.
 
 ## ToDos
 
+- [ ] Add react-form-hook for form validation
 - [ ] Deploy to heroku or netlify or something
 - [ ] CI (Circle, Jenkins, ???)
 - [ ] Google Analytics
