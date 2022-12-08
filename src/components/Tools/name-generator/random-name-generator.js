@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form'
 const RandomNameGenerator = () => {
 	const [names, setNames] = useState([])
 	const { register, handleSubmit, reset, setFocus } = useForm()
+	const letters = 'abcdefghijklmnopqrstuvwxyz'
 
 	const GenerateNames = (data) => {
 		console.log(data)
@@ -12,7 +13,11 @@ const RandomNameGenerator = () => {
 			let newName = []
 			for (let j = 0; j < data.numberOfParts; j++) {
 				let nameLength = RandomBetween(data.minimumLetters, data.maximumLetters)
-				newName.push(nameLength)
+				let name = ''
+				for (let k = 0; k < nameLength; k++) {
+					name += letters[RandomBetween(0, letters.length)]
+				}
+				newName.push(name)
 			}
 			newNames.push(newName.join(' '))
 		}
@@ -24,7 +29,10 @@ const RandomNameGenerator = () => {
 	}
 
 	const RandomBetween = (min, max) => {
-		return Math.floor(Math.random() * max) + min
+		max = Number(max)
+		min = Number(min)
+		let randomNumber = Math.floor(Math.random() * max)
+		return randomNumber + min
 	}
 
 	useEffect(() => {
