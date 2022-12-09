@@ -36,7 +36,7 @@ A project for managing Necromunda, Kill Team and Warcry resources.
   - [ ] Save color schemes
 - [x] Anagram-a-tron
   - [ ] Add MUI styling
-- [ ] Random Name Generator
+- [x] Random Name Generator
   - [ ] Style with MUI
 - [ ] Random Matches
 - [ ] Dice charts (tables to roll)
