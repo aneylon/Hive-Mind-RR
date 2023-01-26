@@ -35,7 +35,7 @@ const RandomNameGenerator = () => {
 		return randomNumber + min
 	}
 
-	useEffect(() => {
+	useEffect((setFocus) => {
 		setFocus('numberOfParts')
 	}, [])
 
