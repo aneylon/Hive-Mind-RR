@@ -8,6 +8,14 @@ const Matcher = () => {
 	const [matchedSet, setMatchedSet] = useState([])
 
 	useEffect(() => {
+		const inputIsValid = () => {
+			const validInput =
+				numberOfModels !== 0 &&
+				numberOfModels !== '' &&
+				numberOfPaints !== 0 &&
+				numberOfPaints !== ''
+			return validInput
+		}
 		setIsDisabled(!inputIsValid())
 	}, [numberOfModels, numberOfPaints])
 
@@ -29,14 +37,6 @@ const Matcher = () => {
 
 	const changeNumberOfPaints = (event) => {
 		setNumberOfPaints(event.target.value)
-	}
-	const inputIsValid = () => {
-		const validInput =
-			numberOfModels !== 0 &&
-			numberOfModels !== '' &&
-			numberOfPaints !== 0 &&
-			numberOfPaints !== ''
-		return validInput
 	}
 
 	const clearNumbers = () => {

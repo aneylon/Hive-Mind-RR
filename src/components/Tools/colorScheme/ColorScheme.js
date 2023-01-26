@@ -1,22 +1,12 @@
 import React, { useState } from 'react'
-import { makeStyles } from '@material-ui/styles'
-import Card from '@material-ui/core/Card'
-import CardActions from '@material-ui/core/CardActions'
-import CardContent from '@material-ui/core/CardContent'
-import Button from '@material-ui/core/Button'
-import TextField from '@material-ui/core/TextField'
-import Typography from '@material-ui/core/Typography'
-
-const useStyles = makeStyles({
-	swatch: {
-		height: '150px',
-		width: '150px',
-		display: 'inline-block',
-	},
-})
+import Card from '@mui/material/Card'
+import CardActions from '@mui/material/CardActions'
+import CardContent from '@mui/material/CardContent'
+import Button from '@mui/material/Button'
+import TextField from '@mui/material/TextField'
+import Typography from '@mui/material/Typography'
 
 const ColorScheme = () => {
-	const classes = useStyles()
 	const [colors, setColors] = useState([])
 	const [numberOfColors, setNumberOfColors] = useState('')
 
@@ -35,8 +25,12 @@ const ColorScheme = () => {
 			return colorsToShow.map((color, index) => {
 				return (
 					<li
-						className={classes.swatch}
-						style={{ backgroundColor: color }}
+						style={{
+							backgroundColor: color,
+							height: '150px',
+							width: '150px',
+							display: 'inline-block',
+						}}
 						key={index}
 					>
 						{color}
@@ -61,7 +55,6 @@ const ColorScheme = () => {
 					<Typography variant='h3'>Generate Colors</Typography>
 					<TextField
 						variant='standard'
-						// placeholder='# of colors to generate'
 						label='Number to generate'
 						type='number'
 						onChange={(event) => setNumberOfColors(event.target.value)}

@@ -5,39 +5,16 @@ import {
 	CardContent,
 	TextField,
 	Typography,
-} from '@material-ui/core'
+} from '@mui/material'
 import React, { useState, useEffect } from 'react'
-import { CasinoOutlined } from '@material-ui/icons'
-import { makeStyles } from '@material-ui/styles'
-
-const useStyles = makeStyles({
-	title: {
-		textDecoration: 'underline',
-		marginBottom: '1rem',
-	},
-	inputField: {
-		marginTop: '1rem',
-		marginBottom: '1rem',
-		display: 'block',
-	},
-	btn: {
-		fontSize: '1.25rem',
-		color: 'gold',
-		backgroundColor: 'grey',
-		'&:hover': {
-			color: 'goldenrod',
-			backgroundColor: 'dimgrey',
-		},
-	},
-})
+import { CasinoOutlined } from '@mui/icons-material'
 
 const EnforcerNameGenerator = () => {
-	const classes = useStyles()
 	const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 	const [numberOfNames, setNumberOfNames] = useState('')
 	const [generatedNames, setGeneratedNames] = useState([])
 
-	useEffect(() => {
+	useEffect((generateNames) => {
 		generateNames()
 	}, [])
 
@@ -63,21 +40,25 @@ const EnforcerNameGenerator = () => {
 		return random
 	}
 
-	const showGeneratedNames = (namesToShow) => {
-		console.log(namesToShow)
-	}
-
 	return (
 		<Card>
 			<CardContent>
-				<Typography className={classes.title} variant='h3' component='h2'>
+				<Typography
+					sx={{ textDecoration: 'underline', marginBottom: '1rem' }}
+					variant='h3'
+					component='h2'
+				>
 					Enforcer Name Generator
 				</Typography>
 			</CardContent>
 			<CardActions>
 				<form>
 					<TextField
-						className={classes.inputField}
+						sx={{
+							marginTop: '1rem',
+							marginBottom: '1rem',
+							display: 'block',
+						}}
 						onChange={(event) => {
 							setNumberOfNames(event.target.value)
 						}}
@@ -87,7 +68,15 @@ const EnforcerNameGenerator = () => {
 					/>
 					<br />
 					<Button
-						className={classes.btn}
+						sx={{
+							fontSize: '1.25rem',
+							color: 'gold',
+							backgroundColor: 'grey',
+							'&:hover': {
+								color: 'goldenrod',
+								backgroundColor: 'dimgrey',
+							},
+						}}
 						variant='contained'
 						onClick={() => {
 							generateNames(numberOfNames)

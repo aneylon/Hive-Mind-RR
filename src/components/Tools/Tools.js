@@ -16,7 +16,7 @@ const Tools = () => {
 			{/* <ColorScheme /> */}
 			{/* <BugReport /> */}
 			{/* <Anagram /> */}
-			{/* <EnforcerNameGenerator /> */}
+			<EnforcerNameGenerator />
 			{/* <Dice /> */}
 		</div>
 	)
